@@ -1,0 +1,88 @@
+gnuplot> f(x) = a*x                                                      
+gnuplot> fit f(x) "datos.csv" using 7:3 via a
+iter      chisq       delta/lim  lambda   a            
+   0 6.8594449928e+19  0.00e+00 2.62e+09  1.000000e+00
+   1 5.6689628040e+17 -1.20e+07 2.62e+08  9.090909e-02
+   2 5.6576418607e+11 -1.00e+11 2.62e+07  9.081914e-05
+   3 5.6825539309e+01 -9.96e+14 2.62e+06  1.777927e-09
+   4 2.5025295343e-01 -2.26e+07 2.62e+05  8.697538e-10
+   5 2.5025295343e-01 -2.26e-07 2.62e+04  8.697537e-10
+iter      chisq       delta/lim  lambda   a            
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.250253
+rel. change during last iteration : -2.26123e-012
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.166751
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0278059
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 8.69754e-010     +/- 2.013e-011   (2.315%)
+gnuplot> g(x) = b*x
+gnuplot> fit g(x) "datos.csv" using 7:4 via b
+iter      chisq       delta/lim  lambda   b            
+   0 6.8594449932e+19  0.00e+00 2.62e+09  1.000000e+00
+   1 5.6689628043e+17 -1.20e+07 2.62e+08  9.090909e-02
+   2 5.6576418610e+11 -1.00e+11 2.62e+07  9.081912e-05
+   3 5.6879991006e+01 -9.95e+14 2.62e+06  1.754097e-09
+   4 3.0470449548e-01 -1.86e+07 2.62e+05  8.459238e-10
+   5 3.0470449548e-01 -1.86e-07 2.62e+04  8.459237e-10
+iter      chisq       delta/lim  lambda   b            
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.304704
+rel. change during last iteration : -1.85678e-012
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.184
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0338561
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+b               = 8.45924e-010     +/- 2.222e-011   (2.626%)
+gnuplot> h(x) = c*x                          
+gnuplot> fit h(x) "datos.csv" using 7:5 via c
+iter      chisq       delta/lim  lambda   c            
+   0 6.8594450011e+19  0.00e+00 2.62e+09  1.000000e+00
+   1 5.6689628109e+17 -1.20e+07 2.62e+08  9.090909e-02
+   2 5.6576418685e+11 -1.00e+11 2.62e+07  9.081854e-05
+   3 5.6718272641e+01 -9.97e+14 2.62e+06  1.172898e-09
+   4 1.4298780840e-01 -3.96e+07 2.62e+05  2.647240e-10
+   5 1.4298780840e-01 -3.96e-07 2.62e+04  2.647239e-10
+iter      chisq       delta/lim  lambda   c            
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.142988
+rel. change during last iteration : -3.95657e-012
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.126046
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0158875
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c               = 2.64724e-010     +/- 1.522e-011   (5.749%)
+gnuplot> j(x) = d*x  
+gnuplot> fit j(x) "datos.csv" using 7:6 via d
+iter      chisq       delta/lim  lambda   d            
+   0 6.8594450039e+19  0.00e+00 2.62e+09  1.000000e+00
+   1 5.6689628131e+17 -1.20e+07 2.62e+08  9.090909e-02
+   2 5.6576418710e+11 -1.00e+11 2.62e+07  9.081834e-05
+   3 5.6603407163e+01 -1.00e+15 2.62e+06  9.722778e-10
+   4 2.8121657543e-02 -2.01e+08 2.62e+05  6.410427e-11
+   5 2.8121657543e-02 -2.01e-06 2.62e+04  6.410418e-11
+iter      chisq       delta/lim  lambda   d            
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.0281217
+rel. change during last iteration : -2.0118e-011
+
+degrees of freedom    (FIT_NDF)                        : 9
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0558984
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00312463
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+d               = 6.41042e-011     +/- 6.749e-012   (10.53%)
